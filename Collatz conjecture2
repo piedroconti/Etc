@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void Collatz_conjecture(int n){
+  while(n != 1){
+    
+    if (n % 2 != 0){
+      n = 3 * n + 1;
+    }
+    else{
+      n = n / 2;
+      }
+  
+  }
+}
+
+int main(){
+  long long num = 1;
+ 
+
+  while(true){
+    Collatz_conjecture(num);
+    cout << num << " is reach the 1" << '\n';
+    num++;
+  }
+
+
+  return 0;
+}
